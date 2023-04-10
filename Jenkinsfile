@@ -29,7 +29,7 @@ environment {
 
   stage('deploy') {
     steps {
-      sh "docker run -itd -p 8081:8080 divyachilukuri/divya:$BUILD_NUMBER"
+      sh "docker run -itd -p 80:8080 divyachilukuri/divya:$BUILD_NUMBER"
     }
   }
 
