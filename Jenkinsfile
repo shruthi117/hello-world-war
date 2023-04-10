@@ -1,6 +1,6 @@
 pipeline{
     agent {
-  label 'docker-agent'
+  label 'docker'
 } 
 environment {
 		DOCKER_LOGIN_CREDENTIALS=credentials('dockerhostpush')
