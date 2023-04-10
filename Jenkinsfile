@@ -1,5 +1,7 @@
 pipeline{
-    agent tomcat-docker-agent
+    agent {
+  label 'tomcat-docker-agent'
+} 
 environment {
 		DOCKER_LOGIN_CREDENTIALS=credentials('dockerhostpush')
 	}
