@@ -3,7 +3,7 @@ pipeline{
   label 'docker'
 } 
 environment {
-		DOCKER_LOGIN_CREDENTIALS=credentials('docker')
+		DOCKER_LOGIN_CREDENTIALS=credentials('shruthi117-docker')
 	}
     stages {
   stage('checkout') {
